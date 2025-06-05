@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* RESET CSS
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*
+{
+	box-sizing: border-box;
+}
+::selection
+{
+    background-color: rgb(172, 254, 238);
+}
+/* GENERAL */
+body
+{
+    
+        font: 13px/1.5 Helvetica, sans-serif;
+        text-size-adjust: none;
+        line-height: 1.5em;
+        margin: auto;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        display: grid;
+        grid-template-columns: 4fr 3fr 2fr;
+        padding: 0% 1.5em;
+        column-gap: 2em;
+        padding-right: 2em;
+        padding-left: 2em;
+        letter-spacing: 0.05em;
+}
+
+/*LOGO
+======================================*/
+
+
+header
+{
+    position: fixed;
+    min-width: 100px;
+    bottom: 15px;
+    left: 15px;
+    z-index: 1000;
+    grid-column: 1;
+   
+    
+    
+    
+}
+.caption, .about, .contact
+{
+    text-transform: uppercase;
+    text-indent: 20px;
+    padding-bottom: 10px;
+    
+    
+    
+}
+
+
+
+/* PROJECT 
+======================================*/
+/*
+.project:hover
+{
+opacity: 80%;
+
+}
+*/
+
+.selected-projects
+{
+    text-transform: uppercase;
+    text-indent: 2em;
+    padding: 15px 0;
+
+}
+.number
+{
+   text-align: left; 
+   color: #333;
+   padding: 0 0 5px 20px;
+  
+   
+
+
+}
+.gallery
+{
+    display: flex;
+    width: 85%;
+    padding: 10px 0;
+}
+.gallery img
+{
+    max-width: 100%;
+    height: auto;
+    padding-left: 5%;
+}
+.discription
+{
+    padding: 0 0 40px 0;
+}
+
+
+/* INFO
+======================================*/
+#info
+{
+    grid-column: 3;
+    height: 100vh;
+ 
+    
+}
+.about
+{
+    padding: 15px 0 10px 0;
+}
+.discription-me
+{
+    padding-bottom: 7em;
+}
+#content
+{
+    grid-column: 2;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;   
+}  
+#content::-webkit-scrollbar
+{
+    display: none;
+}
+.links a, .spotify a
+{
+   text-decoration: none;
+   color: black; 
+   
+}
+.links :hover, .spotify :hover
+{
+    color: blue;
+}
+.spotify
+{
+    padding: 7em 0;
+}
+/*FOOTER
+=====================================*/
+#footer
+{
+   position: fixed;
+    min-width: 100px;
+    bottom: 15px;
+    z-index: 1000;
+}
+
+
+/*MEDIA
+===================================*/
+
+@media (max-width: 900px) {
+  body 
+  {
+    grid-template-columns: 0fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    height: 100vh;
+    font-size: 12px;
+    margin-top: 60px;
+  }
+  header, .discription, .selected-projects, .number, .caption
+   {
+    display: none;
+  }
+ 
+#info {
+    overflow: auto;
+}
+}
+  
