@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://patrycjamoller.com/sitemap.xml
+
+# Disallow access to specific directories
+Disallow: /images/
+Disallow: /css/
+Disallow: /js/ 
