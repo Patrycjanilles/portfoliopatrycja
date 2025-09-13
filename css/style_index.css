@@ -175,11 +175,6 @@ opacity: 80%;
 {
     color: blue;
 }
-.spotify a:hover
-{
-  border-color: #1DB954;
-  background: #f8f8f8;
-}
 .spotify
 {
     padding: 7em 0;
@@ -187,10 +182,10 @@ opacity: 80%;
 }
 .spotify a
 {
-  border: 2px solid #000;
+  border: 1px solid black;
   border-radius: 15px;
   background: #fff;
-  padding: 6px 12px;
+  padding: 4px 8px;
   width: fit-content;
   margin: 0;
   display: flex;
@@ -198,7 +193,6 @@ opacity: 80%;
   gap: 6px;
   text-decoration: none;
   color: #000;
-  transition: all 0.3s ease;
 }
 .play-icon
 {
