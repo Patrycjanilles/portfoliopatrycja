@@ -23,7 +23,7 @@ body {
         margin: auto;
         padding: 0;
         overflow-x: hidden;
-        letter-spacing: 0.05em;
+        letter-spacing: -0.02em;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -99,6 +99,7 @@ main
 font-size: 48px;
 padding-left: 15%;
 line-height: normal;
+letter-spacing: -0.03em;
 
 
 }
@@ -211,76 +212,7 @@ line-height: normal;
   height: auto;
 }
 
-/* back to top */
-.top_button
-{
-    position: fixed;
-    background-color: rgb(234, 234, 234);
-    transform: translateX(-50%);
-    left: 50%;
-    bottom: 20px;
-    z-index: 1000;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease; 
-}
-.top_button.visible
-{
-    opacity: 60%;
-    pointer-events: auto;
-}
-.back_to_top
-{
-    text-decoration: none;
-    color: black;  
-}
-.top_button:hover
-{
-    opacity: 80%;
-   
-}
-.back_to_top:hover
-{
-    color: blue;
-    
-}
-/*footer */
-#footer_project
-{
-    display: block;
-    justify-content: left;
-    padding: 4% 5% 3% 15%;
-    /* background-color: rgb(249, 249, 249); */
-    width: 100vw;
-    height: 350px;
-}
 
-#footer_project div a
-{
-    text-decoration: none;
-    color: black;
-    line-height: 1.5em;
-}
-#footer_project div a:hover
-{
-    color: blue;
-}
-.contact_footer
-{
-    text-transform: uppercase;
-    padding-bottom: 10px;
-}
-.footer-separator {
-    border: none;
-    border-top: 1px solid rgb(198, 198, 198);
-    max-width: 65vw;
-    margin: 32px 0 24px 0;
-    box-sizing: border-box;
-    
-   }
 /* GRID PROJECT2 
 ==============================================
 */
@@ -441,7 +373,7 @@ margin-top: 10%;
     text-align: right;
     font-family: 'Baskerville', serif;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 38px;
     max-width: 600px;
    
 }
@@ -449,6 +381,7 @@ margin-top: 10%;
 {
 font-family: 'Neue Haas Grotesk Display Pro';
 line-height: 1.4;
+font-size: 20px;
 }
 /* animation */
 .video-center
@@ -491,6 +424,141 @@ line-height: 1.4;
     display: block;
     max-width: 100vw;
 }
+/* back to top */
+.top_button
+{
+    position: fixed;
+    background-color: rgb(234, 234, 234);
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease; 
+}
+.top_button.visible
+{
+    opacity: 60%;
+    pointer-events: auto;
+}
+.back_to_top
+{
+    text-decoration: none;
+    color: black;  
+}
+.top_button:hover
+{
+    opacity: 80%;
+   
+}
+.back_to_top:hover
+{
+    color: blue;
+    
+}
+/*footer */
+#footer_project
+{
+    display: block;
+    justify-content: left;
+    padding: 4% 5% 3% 15%;
+    /* background-color: rgb(249, 249, 249); */
+    width: 100vw;
+    height: 350px;
+}
+
+#footer_project div a
+{
+    text-decoration: none;
+    color: black;
+    line-height: 1.1;
+    font-size: 15px;
+
+
+}
+#footer_project div a:hover
+{
+    color: blue;
+}
+.contact_footer
+{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: -0.09em;
+    font-size: 42px;
+}
+.footer-separator {
+    border: none;
+    border-top: 1px solid rgb(198, 198, 198);
+    max-width: 65vw;
+    margin: 32px 0 24px 0;
+    box-sizing: border-box;
+    
+}
+
+ /* --- Tło z chmurkami --- */
+ .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .cloud {
+    position: absolute;
+    border-radius: 80%;
+    background: radial-gradient(circle, rgba(255, 151, 195, 0.734) 80%, transparent 80%);
+    filter: blur(50px);
+    animation: float 10s ease-in-out infinite;
+  }
+
+  /* Różne chmurki z różnymi pozycjami i rozmiarami */
+  .cloud:nth-child(1) {
+    width: 400px;
+    height: 400px;
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+  }
+
+  .cloud:nth-child(2) {
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 60%;
+    animation-delay: 10s;
+  }
+
+  .cloud:nth-child(3) {
+    width: 250px;
+    height: 250px;
+    top: 30%;
+    left: 80%;
+    animation-delay: 20s;
+  }
+
+  .cloud:nth-child(4) {
+    width: 350px;
+    height: 350px;
+    top: 70%;
+    left: 30%;
+    animation-delay: 15s;
+  }
+
+  /* Animacja przesuwania */
+  @keyframes float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(60px, -60px); }
+    100% { transform: translate(0, 0); }
+  }
 
 
 @media screen and (max-width: 768px)
