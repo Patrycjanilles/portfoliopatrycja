@@ -670,127 +670,280 @@ font-size: 20px;
 
 /* MEDIA 
 ============================= */
-@media screen and (max-width: 768px)
-{
-    body 
-    /*
-    {
-        background-color: black;
-        color: white;
-    }
-        */
-    #menu
-    {
-      font-size:16px;
-      position: relative;
-      padding-top: 40px;
-      background-color: rgba(0, 0, 139, 0);
 
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        font-size: 16px;
     }
-    #title, .about_link, .contact_link, .blog_here
-    {
+
+    /* Menu */
+    #menu {
+        font-size: 14px;
+        position: relative;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        height: auto;
+        text-indent: 0;
+    }
+
+    #title, .about_link, .contact_link, .blog_here {
         display: none;
     }
-    .photo-grid
-    {
+
+    #close {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    /* Text sections */
+    .text {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .visual {
+        font-size: 30px;
+    }
+
+    .discription1 {
+        width: 100%;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    /* Cover section */
+    .cover {
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+        gap: 20px;
+    }
+
+    .magazine img {
+        max-width: 100%;
+    }
+
+    /* Photo sections */
+    .photo1 img {
+        width: 100%;
+    }
+
+    .picture1 {
+        padding-top: 40px;
+    }
+
+    .picture1 video {
+        max-width: 100%;
+    }
+
+    /* Book grid */
+    #book {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 5% 20px;
+    }
+
+    .bkk img {
+        max-width: 100%;
+    }
+
+    /* Photo grid */
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         break-inside: auto;
     }
-    /*
-    #close
-    {
-        color: white;
-    }
-        */
-    .text-top
-    {
+
+    .text-top {
         margin: 5vh 5vw;
         padding: 50px 0 50px 0;
-        width: 80vw;
-
+        width: 90vw;
     }
-    ::selection
-{
-   color: black;    
-}
-#footer_project
-{
-    margin: 30px 30px 40px 0;
-}
 
+    /* Contact */
+    .contact_title {
+        font-size: 34px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 100px;
+    }
 
-.visual
-{
-    font-size: 28px;
-}
-.discription1 {
-    width: 90%;
-}
-.gradient-section
-{
-    margin-top: auto;
-}
-.two-raw
-{
-    display: block;
-    margin: 100px 0;
-}
-.column
-{
-    padding: 20px;
-}
-.column.left
-{
-    font-size: 32px;
-    text-align: left;
-}
-.video-center
-{
-    width: 100vw;
-}
- /* Footer Mobile */
- #footer-mobile {
-    display: block;
-    order: 3;
-    margin-top: auto;
-    padding-top: 80px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
+    .contact_subtitle {
+        font-size: 24px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
 
-  .footer-contact-text {
-    font-size: 28px;
-    font-weight: 600;
-   
-    margin-bottom: 20px;
-    color: black;
-  }
+    /* About */
+    .more_soon {
+        font-size: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 100px;
+    }
 
-  .footer-contact-info {
-    font-size: 20px;
-    
-  }
+    .about_text {
+        font-size: 34px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
 
-  .footer-contact-info a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 8px;
-  }
+    /* Blog */
+    .blog {
+        font-size: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 100px;
+    }
 
-  .footer-contact-info a:hover {
-    color: blue;
-  }
-  .text
-  {
-    margin-left: 40px;
-    margin-top: 20px;
-  }
-  .visual
-  {
-    font-size: 30px;
-  }
+    /* Project 3 - Berlin */
+    .visual-raw {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .national-galerie-img {
+        max-width: 60%;
+    }
+
+    .berlin-date {
+        font-size: 18px;
+    }
+
+    .gradient-section {
+        margin-top: 10vh;
+    }
+
+    .pink-gradient {
+        height: 40px;
+    }
+
+    .two-raw {
+        display: block;
+        margin: 50px 0;
+        padding: 0 20px;
+    }
+
+    .column {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .column.left {
+        font-size: 28px;
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .column.right {
+        font-size: 16px;
+    }
+
+    .video-center {
+        width: 100vw;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .two-photo {
+        flex-direction: column;
+    }
+
+    .two-photo img {
+        width: 100%;
+    }
+
+    /* Project 4 - Speakly */
+    .title_speakly {
+        font-size: 34px;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+
+    .discription_speakly {
+        width: 100%;
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    .visit_speakly {
+        margin-left: 20px;
+        font-size: 24px;
+    }
+
+    .visit_speakly::after {
+        width: 30px;
+        height: 30px;
+    }
+
+    .images_speakly {
+        margin: 20px;
+    }
+
+    /* Footer */
+    #footer_project {
+        margin: 30px 20px 40px 20px;
+        padding-left: 0;
+    }
+
+    .contact_footer {
+        font-size: 24px;
+    }
+
+    .footer-separator {
+        max-width: 100%;
+    }
+
+    /* Footer Mobile */
+    #footer-mobile {
+        display: block;
+        order: 3;
+        margin-top: auto;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-contact-text {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    .footer-contact-info {
+        font-size: 18px;
+    }
+
+    .footer-contact-info a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 8px;
+    }
+
+    .footer-contact-info a:hover {
+        color: blue;
+    }
+
+    /* Back to top button */
+    .top_button {
+        padding: 8px 16px;
+        font-size: 14px;
+        bottom: 10px;
+    }
+
+    /* Selection */
+    ::selection {
+        color: black;
+    }
 }
