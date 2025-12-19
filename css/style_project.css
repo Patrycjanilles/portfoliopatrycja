@@ -336,68 +336,6 @@ margin-top: 10%;
     margin-right: 60px;
     margin-top: 200px;
 }
-/* MEDIA 
-============================= */
-@media screen and (max-width: 768px)
-{
-    body 
-    /*
-    {
-        background-color: black;
-        color: white;
-    }
-        */
-    #menu
-    {
-      font-size:16px;
-      position: relative;
-      padding-top: 70px;
-      background-color: rgba(0, 0, 139, 0);
-
-    }
-    #title
-    {
-        display: none;
-    }
-    .photo-grid
-    {
-        break-inside: auto;
-    }
-    /*
-    #close
-    {
-        color: white;
-    }
-        */
-    .text-top
-    {
-        margin: 5vh 5vw;
-        padding: 50px 0 50px 0;
-        width: 80vw;
-
-    }
-    ::selection
-{
-   color: black;    
-}
-#footer_project
-{
-    margin: 30px 30px 40px 0;
-}
-
-.visual, .discription1
-{
-    padding-left: 10%;
-    
-}
-.visual
-{
-    font-size: 28px;
-}
-.discription1 {
-    width: 90%;
-}
-}
 /*  PROJECT 3 
 ==============================================
 */
@@ -559,17 +497,18 @@ font-size: 20px;
 {
     display: block;
     justify-content: left;
-    padding: 4% 5% 3% 15%;
+    padding-left: 30px;
     /* background-color: rgb(249, 249, 249); */
     width: 100vw;
-    height: 350px;
+    min-height: auto;
+    padding-bottom: 40px;
 }
 
 #footer_project div a
 {
     text-decoration: none;
     color: black;
-    line-height: 1.1;
+    
     font-size: 15px;
 
 
@@ -580,17 +519,17 @@ font-size: 20px;
 }
 .contact_footer
 {
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    font-weight: 700;
-    letter-spacing: -0.09em;
-    font-size: 42px;
+    
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 30px;
 }
+
 .footer-separator {
     border: none;
     border-top: 1px solid rgb(198, 198, 198);
     max-width: 65vw;
-    margin: 32px 0 24px 0;
+   
     box-sizing: border-box;
     
 }
@@ -665,10 +604,10 @@ font-size: 20px;
 }
 .discription_speakly
 {
-    width: 50%;
+    width: 60%;
     height: auto;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 60px;
     margin-bottom: 60px;
     
@@ -729,9 +668,63 @@ font-size: 20px;
 
 
 
-
+/* MEDIA 
+============================= */
 @media screen and (max-width: 768px)
 {
+    body 
+    /*
+    {
+        background-color: black;
+        color: white;
+    }
+        */
+    #menu
+    {
+      font-size:16px;
+      position: relative;
+      padding-top: 40px;
+      background-color: rgba(0, 0, 139, 0);
+
+    }
+    #title, .about_link, .contact_link, .blog_here
+    {
+        display: none;
+    }
+    .photo-grid
+    {
+        break-inside: auto;
+    }
+    /*
+    #close
+    {
+        color: white;
+    }
+        */
+    .text-top
+    {
+        margin: 5vh 5vw;
+        padding: 50px 0 50px 0;
+        width: 80vw;
+
+    }
+    ::selection
+{
+   color: black;    
+}
+#footer_project
+{
+    margin: 30px 30px 40px 0;
+}
+
+
+.visual
+{
+    font-size: 28px;
+}
+.discription1 {
+    width: 90%;
+}
 .gradient-section
 {
     margin-top: auto;
@@ -754,4 +747,50 @@ font-size: 20px;
 {
     width: 100vw;
 }
+ /* Footer Mobile */
+ #footer-mobile {
+    display: block;
+    order: 3;
+    margin-top: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer-contact-text {
+    font-size: 28px;
+    font-weight: 600;
+   
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .footer-contact-info {
+    font-size: 20px;
+    
+  }
+
+  .footer-contact-info a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
+  }
+
+  .footer-contact-info a:hover {
+    color: blue;
+  }
+  .text
+  {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  .visual
+  {
+    font-size: 30px;
+  }
 }
