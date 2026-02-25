@@ -203,12 +203,24 @@ opacity: 80%;
     height: auto;
     
 }
+.gallery video
+{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 .gallery img:hover{
     border-radius: 10px;
     transition: 0.2s;
     opacity: 80%;
     
+}
+.gallery video:hover{
+    border-radius: 10px;
+    transition: 0.2s;
+    opacity: 80%;
 }
 .discription
 {
