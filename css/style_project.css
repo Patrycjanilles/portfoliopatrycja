@@ -908,7 +908,7 @@ font-size: 24px;
 
 .about_title
 {
-    font-size: 54px;
+    font-size: 44px;
     letter-spacing: -0.03em;
     margin: 250px 100px 100px 100px;
     font-weight: 400;
@@ -924,15 +924,16 @@ font-size: 24px;
     display: block;
     margin: 0 auto;
     margin-top: 200px;
+    margin-bottom: 50px;
     object-fit: contain;
     border-radius: 30px;
     
 }
 .about_subtitle
 {
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 400;
-    margin: 40px auto 0;
+    margin: 60px auto 0 auto;
     max-width: 800px;
     align-items: center;
     
@@ -941,9 +942,9 @@ font-size: 24px;
 {
     font-size: 24px;
     font-weight: 400;
-    margin: 40px auto 0;
+    margin: 10px auto 0;
     max-width: 800px;
-    line-height: 1.4;
+    line-height: 1.5;
     align-items: center;
     
 }
