@@ -118,13 +118,14 @@ h3{
     border: 1px solid transparent;
     border-radius: 999px;
     padding: 3px;
-    transition: color 0.4s ease, border 0.4s ease;
+    transition: color 0.4s ease, border 0.4s ease, filter 0.4s ease;
     text-decoration: underline;
    
 }
 .about_link:hover, .contact_link:hover
 {
     color: blue;
+    filter: blur(0.6px);
     
     
     
@@ -150,8 +151,15 @@ h3{
     margin-top: 60px; 
     font-family: 'Manstein', 'Great Vibes', cursive;
     font-size: 26px;
+    transition: color 0.4s ease, filter 0.4s ease;
     
 
+}
+
+.blog_here:hover
+{
+    color: blue;
+    filter: blur(0.6px);
 }
 
 
@@ -436,6 +444,7 @@ opacity: 80%;
   }
   .blog_here:hover {
     color: blue;
+    filter: blur(0.6px);
     
   }
 
