@@ -59,6 +59,29 @@ body
          
 }
 
+/* CURSOR TETRAHEDRONS (LEFT COLUMN)
+======================================*/
+#cursor-stage
+{
+    grid-column: 1;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    cursor: none;
+}
+.cursor-tetra
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+    will-change: transform;
+}
+
 /*LOGO
 ======================================*/
 
@@ -340,6 +363,7 @@ opacity: 80%;
     min-width: 100px;
     bottom: 15px;
     z-index: 1000;
+  
 }
 
 /*FOOTER MOBILE
@@ -347,6 +371,7 @@ opacity: 80%;
 #footer-mobile
 {
     display: none;
+    text-transform: uppercase;
 }
 
  
@@ -375,6 +400,11 @@ opacity: 80%;
     font-size: 28px;
     margin: 0;
     box-sizing: border-box;
+  }
+
+  /* Hide cursor animation on mobile */
+  #cursor-stage {
+    display: none;
   }
 
   /* Reorder elements for mobile - info first, then content */
@@ -561,17 +591,19 @@ opacity: 80%;
     order: 3;
     margin-top: auto;
     padding-top: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    text-transform: none;
   }
 
   .footer-contact-text {
     font-size: 24px;
     font-weight: 600;
+
    
     margin-bottom: 20px;
     color: black;
@@ -579,14 +611,18 @@ opacity: 80%;
 
   .footer-contact-info {
     font-size: 18px;
+    line-height: 1.0;
+    text-decoration: underline;
+    text-transform: lowercase;
     
   }
 
   .footer-contact-info a {
     display: block;
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
     margin-bottom: 8px;
+
   }
 
   .footer-contact-info a:hover {

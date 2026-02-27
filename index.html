@@ -87,6 +87,9 @@ Design and Code by Patrycja Moeller
      
     <body>
 
+    <!-- LEFT COLUMN CURSOR ANIMATION -->
+    <div id="cursor-stage" aria-hidden="true"></div>
+
     <!--LOGO--------------------------->
     <header>
         <h1>Patrycja Moeller</h1>
@@ -214,7 +217,7 @@ Design and Code by Patrycja Moeller
            <!-- blog -->
            <a href="blog.html" class="blog_here">Blog here</a>
         <div class="links">
-           <a href="mailto:hello@patrycjamoeller.com">hello[at]patrycjamoeller.com</a>
+           <a href="mailto:hello@patrycjamoeller.com">hello@patrycjamoeller.com</a>
            <a href="tel:+794068624">+48794068624</a>
            <a href="https://www.instagram.com/patry.ofc/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
@@ -240,9 +243,9 @@ Design and Code by Patrycja Moeller
      
      <!--FOOTER MOBILE----------------------->
      <footer id="footer-mobile">
-         <div class="footer-contact-text">Feel free to get in touch.</div>
+         <div class="footer-contact-text">Feel free to get in touch</div>
          <div class="footer-contact-info">
-             <a href="mailto:hello@patrycjamoeller.com">hello[at]patrycjamoeller.com</a>
+             <a href="mailto:hello@patrycjamoeller.com">hello@patrycjamoeller.com</a>
              <a href="tel:+794068624">+48794068624</a>
          </div>
      </footer>   
@@ -264,6 +267,90 @@ Design and Code by Patrycja Moeller
                 playIcon.style.color = '#1DB954';
             }
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const stage = document.getElementById('cursor-stage');
+            if (!stage) {
+                return;
+            }
+
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (prefersReducedMotion) {
+                return;
+            }
+
+            const imageSources = [
+                'images/bill400.jpg',
+                'images/cover.jpg',
+                'images/grid14.jpg',
+                'images/grid7.jpg',
+                'images/grid41.jpg',
+                'images/grid5.jpg',
+                'images/grid35.jpg',
+                'images/hoek_grass.jpg'
+            ];
+
+            const size = 40;
+            const frameDistance = 12;
+            let bounds = stage.getBoundingClientRect();
+            let last = null;
+            let distanceBucket = 0;
+            let frameIndex = 0;
+
+            const cursorImage = document.createElement('img');
+            cursorImage.src = imageSources[0];
+            cursorImage.alt = '';
+            cursorImage.className = 'cursor-tetra';
+            cursorImage.width = size;
+            cursorImage.height = size;
+            cursorImage.style.opacity = '0';
+            stage.appendChild(cursorImage);
+
+            const updateBounds = () => {
+                bounds = stage.getBoundingClientRect();
+            };
+
+            const updatePosition = (x, y) => {
+                cursorImage.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+            };
+
+            const advanceFrame = () => {
+                frameIndex = (frameIndex + 1) % imageSources.length;
+                cursorImage.src = imageSources[frameIndex];
+            };
+
+            stage.addEventListener('mousemove', (event) => {
+                const x = event.clientX - bounds.left;
+                const y = event.clientY - bounds.top;
+
+                if (last) {
+                    const dx = x - last.x;
+                    const dy = y - last.y;
+                    distanceBucket += Math.hypot(dx, dy);
+                    while (distanceBucket >= frameDistance) {
+                        distanceBucket -= frameDistance;
+                        advanceFrame();
+                    }
+                }
+
+                updatePosition(x, y);
+                cursorImage.style.opacity = '1';
+                last = { x, y };
+            });
+
+            stage.addEventListener('mouseenter', () => {
+                cursorImage.style.opacity = '1';
+            });
+
+            stage.addEventListener('mouseleave', () => {
+                last = null;
+                distanceBucket = 0;
+                cursorImage.style.opacity = '0';
+            });
+
+            updateBounds();
+            window.addEventListener('resize', updateBounds);
+        });
      </script>
      <script src="js/scrollReveal.js"></script>
      

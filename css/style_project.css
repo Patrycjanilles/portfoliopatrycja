@@ -87,6 +87,10 @@ padding-left: 4%;
 {
     text-decoration: none;
     color: black;
+    text-transform: none;
+    font-variant: normal;
+    text-transform: none;
+    font-variant: normal;
     margin-left: 50px;
 }
 #close:hover
@@ -698,12 +702,17 @@ font-size: 24px;
     justify-content: left;
     padding-left: 0;
     margin-top: 200px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     width: 100%;
     max-width: 100%;
     min-height: auto;
     padding-bottom: 40px;
     box-sizing: border-box;
+}
+
+#footer-mobile
+{
+    display: none;
 }
 
 .footer_project_inner
@@ -723,6 +732,10 @@ font-size: 24px;
 
 
 }
+#footer_project a[href^="mailto:"]
+{
+    text-transform: lowercase;
+}
 #footer_project div a:hover
 {
     color: blue;
@@ -733,7 +746,7 @@ font-size: 24px;
     
     padding-bottom: 20px;
     font-weight: 400;
-    font-size: 42px;
+    font-size: 43px;
     
 }
 
@@ -743,7 +756,7 @@ font-size: 24px;
     border: 1px solid black;
     border-radius: 999px;
     padding: 4px 10px;
-    text-transform: uppercase;
+    
     font-size: 16px;
     letter-spacing: 0.04em;
 }
@@ -756,17 +769,17 @@ font-size: 24px;
 .contact_footer_links
 {
     text-align: left;
-    text-transform: uppercase;
-    font-size: 16px;
+    
+    font-size: 20px;
   
     
-    margin-left: 150px;
+    margin-left: 200px;
 }
 
 
 .footer_left
 {
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
  /* --- Tło z chmurkami --- */
@@ -923,7 +936,7 @@ font-size: 24px;
     height: auto;
     display: block;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 110px;
     margin-bottom: 50px;
     object-fit: contain;
     border-radius: 30px;
@@ -1301,59 +1314,52 @@ font-size: 24px;
         height: auto;
     }
 
-    /* Footer */
-    #footer_project {
-        margin: 90px 20px 50px 20px;
-        padding-left: 0;
-        width: calc(100% - 40px);
-        max-width: 100%;
-        box-sizing: border-box;
-    }
+  
+   /* Footer Mobile */
+  #footer_project {
+    display: none;
+  }
 
-    .contact_footer {
-        font-size: 24px;
-        font-weight: 600;
-    }
+  #footer-mobile {
+    display: block;
+    order: 3;
+    margin-top: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 
-    .footer-separator {
-        max-width: 100%;
-    }
+  .footer-contact-text {
+    font-size: 24px;
+    font-weight: 600;
 
-    /* Footer Mobile */
-    #footer-mobile {
-        display: block;
-        order: 3;
-        margin-top: auto;
-        padding-top: 60px;
-        padding-bottom: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
+   
+    margin-bottom: 20px;
+    color: black;
+  }
 
-    .footer-contact-text {
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        color: black;
-    }
+  .footer-contact-info {
+    font-size: 18px;
+    line-height: 1.0;
+    text-decoration: underline;
+    margin-bottom: 80px;
+    
+  }
 
-    .footer-contact-info {
-        font-size: 18px;
-    }
+  .footer-contact-info a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
+  }
 
-    .footer-contact-info a {
-        display: block;
-        text-decoration: none;
-        color: black;
-        margin-bottom: 8px;
-    }
-
-    .footer-contact-info a:hover {
-        color: blue;
-    }
+  .footer-contact-info a:hover {
+    color: blue;
+  }
 
     /* Back to top button */
     .top_button {
@@ -1366,4 +1372,28 @@ font-size: 24px;
     ::selection {
         color: black;
     }
+
+    /* About */
+    .about_title {
+        margin: 90px 20px 50px 20px;
+        font-size: 32px;
+    }
+
+    .about_images {
+        margin-top: 10px;
+        width: 80%;
+        margin-bottom: -40px;
+    }
+
+    .about_subtitle {
+        font-size: 18px;
+        margin: 70px 20px 0 20px;
+    }
+
+    .about_text2 {
+        font-size: 18px;
+        margin-top: 10px;
+        margin: 10px 20px 50px 20px;
+    }
+    
 }
