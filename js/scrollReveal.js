@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const targets = Array.from(document.querySelectorAll("main img"));
+  const scope = document.querySelector("main") || document.body;
+  const targets = Array.from(scope.querySelectorAll("img"));
 
   if (targets.length === 0) {
     return;
