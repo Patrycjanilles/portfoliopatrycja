@@ -87,9 +87,7 @@ padding-left: 4%;
 {
     text-decoration: none;
     color: black;
-    text-transform: none;
-    font-variant: normal;
-    text-transform: none;
+    text-transform: uppercase;
     font-variant: normal;
     margin-left: 50px;
 }
@@ -160,7 +158,7 @@ letter-spacing: -0.03em;
     justify-content: flex-end;
     padding: 120px 0 40px 0;
 }
-.text-hero-content
+.text-hero-content 
 {
     max-width: 700px;
     margin-right: 120px;
@@ -841,82 +839,153 @@ font-size: 24px;
     100% { transform: translate(0, 0); }
   }
 
-/* PROJECT 4 */ 
-.title_speakly
-{
-    font-size: 60px;
-    letter-spacing: -0.03em;
-    margin-top: 120px;
-    margin-left: 60px;
-    font-family: 'Hedvig Letters Serif', serif;
-}
-.discription_speakly
-{
-    width: 100%;
-    max-width: 800px;
-    margin-top: 30px;
-    font-size: 24px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 60px;
-    box-sizing: border-box;
-}
-.visit_speakly
-{
+/* PROJECT 4 -------------------------*/ 
+speakly_main {
+    display: flex;
+    flex-direction: column;
     
-    color: black;
-    margin-left: 60px;
-    font-size: 42px;
-    display: inline-block;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    font-family: 'Neue Haas Grotesk Display Pro ', sans-serif;
+}
+.speakly_foto
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     position: relative;
+    width: 100%;
+    height: 100%;
+    
+    margin-bottom: 10px;
 }
-.visit_speakly::after
+.speakly_foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text_speakly
 {
-    content: "";
-    margin-left: 10px;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: currentColor;
-    mask-image: url("../svg/arrow_speakly.svg");
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
-    -webkit-mask-image: url("../svg/arrow_speakly.svg");
-    -webkit-mask-size: contain;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    vertical-align: middle;
-    transition: transform 0.3s ease;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: center;
+    pointer-events: none;
 }
-.visit_speakly:hover
+.speakly_hero
 {
-    color: blue;
+    font-size: 54px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 170px;
 }
-.visit_speakly:hover::after
-{
-    transform: translateX(4px);
-}
-
-.images_speakly
+.project-hero-tags-web
 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 60px;
-    width: calc(100% - 120px);
-    max-width: 100%;
-    box-sizing: border-box;
+    align-items: center;    
+    gap: 16px;
+    margin-top: 50px;
+    font-size: 20px;
+    
+
 }
-.images_speakly img
+.project-hero-tags-web span
+{
+    padding: 4px 12px;
+    border-radius: 999px;
+    
+    background: rgba(194, 205, 240, 0.506);
+}
+.speakly_visit_button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+    font-size: 54px;
+    font-weight: 400;
+    
+    color: #000000;
+}
+
+
+.speakly_visit_link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0% 1.5px;
+    transition: color 0.4s ease, background-size 0.4s ease;
+}
+.speakly_visit_link:hover
+{
+    color: blue;
+    background-size: 100% 1.5px;
+}
+
+.speakly_arrow {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin-left: 20px;
+    transform: rotate(0deg);
+    transition: transform 0.4s ease;
+}
+
+.speakly_visit_link:hover .speakly_arrow {
+    transform: rotate(-45deg);
+}
+
+  .speakly_text_web
+  {
+    display: block;
+    width: min(700px, 100%);
+    margin: 180px 40px 250px auto;
+    padding: 0 24px 0 0;
+    text-align: left;
+  }
+  .speakly_text_web_margin
+  {
+    margin: 100px 0 70px 0;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+.speakly_text_web_margin:last-child {
+    margin-bottom: 0;
+}
+.speakly-video-web
 {
     width: 100%;
-    max-width: 100%;
     height: auto;
+    display: block;
+    margin-top: 100px;
     
-} 
+}
+.speakly-video-web video
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.speakly_foto2
+{
+    margin-top: 90px;
+}
 
-/* about */
+/* about --------------------------------------*/
 
 
 .about_title
@@ -1276,46 +1345,137 @@ font-size: 24px;
         width: 100%;
     }
 
-    /* Project 4 - Speakly */
-    .title_speakly {
-        font-size: 34px;
-        margin-left: 20px;
-        margin-top: 60px;
-    }
-
-    .discription_speakly {
-        width: calc(100% - 40px);
-        max-width: 100%;
-        font-size: 18px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 40px;
-        box-sizing: border-box;
-    }
-
-    .visit_speakly {
-        margin-left: 20px;
-        font-size: 24px;
-    }
-
-    .visit_speakly::after {
-        width: 30px;
-        height: 30px;
-    }
-
-    .images_speakly {
-        margin: 20px;
-        width: calc(100% - 40px);
-        box-sizing: border-box;
-    }
+    /* Project 4 - Speakly --------------------------------------*/
     
-    .images_speakly img {
-        max-width: 100%;
-        height: auto;
-    }
+.speakly_main {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    font-family: 'Neue Haas Grotesk Display Pro ', sans-serif;
+}
+.speakly_foto
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    margin-bottom: 10px;
+}
+.speakly_foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text_speakly
+{
+    position: absolute;
+    left: 50%;
+    bottom: 14%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: center;
+    pointer-events: none;
+}
+.speakly_hero
+{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 70px;
+}
+.project-hero-tags-web
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 8px;
+    margin-top: 30px;
+    font-size: 12px;
+    
 
-  
-   /* Footer Mobile */
+}
+.project-hero-tags-web span
+{
+    padding: 4px 12px;
+    border-radius: 999px;
+    
+    background: rgba(194, 205, 240, 0.506);
+}
+.speakly_visit_button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    font-size: 24px;
+    font-weight: 400;
+    
+    color: #000000;
+}
+
+.speakly_visit_link {
+    display: inline-flex;
+    align-items: center;
+    
+   
+   
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    color: #000000;
+}
+
+.speakly_visit_link img {
+    width: 26px;
+    height: auto;
+    display: block;
+    margin-left: 20px;
+}
+
+  .speakly_text_web
+  {
+   margin: 70px 35px 0 35px;
+   text-align: left;
+   font-size: 18px;
+   
+  }
+  .speakly_text_web_margin
+  {
+    margin: 0 0 60px 0;
+  }
+
+.speakly_text_web_margin:last-child {
+    margin-bottom: 0;
+}
+.speakly-video-web
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 100px;
+    
+}
+.speakly-video-web video
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.speakly_foto2
+{
+    margin-top: 90px;
+}
+   /* Footer Mobile --------------------------------------*/
   #footer_project {
     display: none;
   }
@@ -1323,7 +1483,7 @@ font-size: 24px;
   #footer-mobile {
     display: block;
     order: 3;
-    margin-top: auto;
+    
     padding-top: 80px;
     padding-bottom: 40px;
     padding-left: 20px;
