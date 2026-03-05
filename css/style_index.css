@@ -148,7 +148,7 @@ h3{
 .about_link:hover, .contact_link:hover
 {
     color: blue;
-    filter: blur(0.6px);
+    
     
     
     
@@ -182,7 +182,8 @@ h3{
 .blog_here:hover
 {
     color: blue;
-    filter: blur(0.6px);
+    filter: blur(3.6px);
+    
 }
 
 
