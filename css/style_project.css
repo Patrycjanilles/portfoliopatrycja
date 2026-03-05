@@ -93,15 +93,16 @@ padding-left: 4%;
 }
 #close:hover
 {
-    color: blue;;
+    color: blue;
+    transition: color 0.4s ease, border 0.4s ease;
 }
 
-.about_link, .contact_link, .blog_here
+.about_link, .contact_link, .blog_here 
+
 {
     text-decoration: none;
     color: black;
-    border: 1px solid transparent;
-    border-radius: 999px;
+   
     padding: 3px;
     transition: color 0.4s ease, border 0.4s ease;
     
@@ -109,7 +110,7 @@ padding-left: 4%;
 .about_link:hover, .contact_link:hover, .blog_here:hover
 {
     color: blue;
-    border: 1px solid blue;
+    
 }
 /* MEIN
 =========================*/
