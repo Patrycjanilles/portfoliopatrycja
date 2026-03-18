@@ -93,6 +93,13 @@ body.about-page > * {
     
     
 }
+.navcontent
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
 #title
 {
