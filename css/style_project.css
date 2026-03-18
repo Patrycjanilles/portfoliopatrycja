@@ -42,6 +42,28 @@ body {
         display: flex;
         flex-direction: column;
 }
+body.about-page {
+        position: relative;
+        background-color: #ffffff;
+        isolation: isolate;
+}
+body.about-page::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-color: #ffffff;
+        background-image: url("../images/about.background3.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        z-index: 0;
+        pointer-events: none;
+}
+body.about-page > * {
+        position: relative;
+        z-index: 1;
+}
 /* PROJECT
 ======================================*/
 
@@ -63,7 +85,8 @@ body {
     height: 30px;  
     backdrop-filter: blur(5px);  
     -webkit-backdrop-filter: blur(10px);
-    font-size: 16px;
+    font-size: 14px;
+    
   
     
 
@@ -673,6 +696,7 @@ font-size: 24px;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease; 
+    font-size: 12px;
 }
 .top_button.visible
 {
@@ -694,7 +718,7 @@ font-size: 24px;
     color: blue;
     
 }
-/*footer */
+/*footer -------------------------------*/
 #footer_project
 {
     display: block;
@@ -745,7 +769,7 @@ font-size: 24px;
     
     padding-bottom: 20px;
     font-weight: 400;
-    font-size: 43px;
+    font-size: 16px;
     
 }
 
@@ -768,10 +792,7 @@ font-size: 24px;
 .contact_footer_links
 {
     text-align: left;
-    
-    font-size: 20px;
-  
-    
+    font-size: 16px;
     margin-left: 200px;
 }
 
@@ -875,7 +896,7 @@ speakly_main {
     bottom: 20%;
     transform: translateX(-50%);
     color: #ffffff;
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 400;
     letter-spacing: 0.5px;
     text-align: center;
@@ -895,7 +916,7 @@ speakly_main {
     align-items: center;    
     gap: 16px;
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 14px;
     
 
 }
@@ -908,18 +929,20 @@ speakly_main {
 }
 .speakly_visit_button
 {
+
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 170px;
-    font-size: 54px;
-    font-weight: 400;
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: 600;
     
     color: #000000;
 }
 
 
 .speakly_visit_link {
+    
     display: inline-flex;
     align-items: center;
     text-decoration: none;
@@ -930,6 +953,7 @@ speakly_main {
     background-size: 0% 1.5px;
     transition: color 0.4s ease, background-size 0.4s ease;
 }
+
 .speakly_visit_link:hover
 {
     color: blue;
@@ -937,10 +961,11 @@ speakly_main {
 }
 
 .speakly_arrow {
-    width: 50px;
+
+    width: 30px;
     height: auto;
     display: block;
-    margin-left: 20px;
+    margin-left: 10px;
     transform: rotate(0deg);
     transition: transform 0.4s ease;
 }
@@ -1012,23 +1037,30 @@ speakly_main {
     border-radius: 30px;
     
 }
+.about_text2_section
+{
+    margin-top: 200px;
+    color: #ffffff;
+    mix-blend-mode: difference;
+}
 .about_subtitle
 {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
-    margin: 60px auto 0 auto;
+    margin: 60px 200px 0 650px;
     max-width: 800px;
-    align-items: center;
-    
+    align-items: left;
+
 }
 .about_text2
 {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
-    margin: 10px auto 0;
+    margin: 10px 200px 0 650px;
     max-width: 800px;
     line-height: 1.5;
-    align-items: center;
+    align-items: left;
+    
     
 }
 
@@ -1042,6 +1074,12 @@ speakly_main {
     body {
         padding: 0;
         font-size: 16px;
+    }
+
+    body.about-page::before {
+        background-attachment: scroll;
+        background-size: 150% auto;
+        background-position: 10% 120px;
     }
 
     /* Project hero */
@@ -1544,6 +1582,10 @@ speakly_main {
         margin-top: 10px;
         width: 80%;
         margin-bottom: -40px;
+    }
+
+    .about_text2_section {
+        margin-top: 140px;
     }
 
     .about_subtitle {
