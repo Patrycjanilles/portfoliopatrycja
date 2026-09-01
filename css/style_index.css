@@ -260,6 +260,15 @@ opacity: 80%;
     font-size: 16px;
 }
 
+.fridgebook-code-link {
+    
+    color: #000000;
+}
+
+.fridgebook-code-link:hover {
+    color: blue;
+}
+
 
 /* INFO
 ======================================*/
