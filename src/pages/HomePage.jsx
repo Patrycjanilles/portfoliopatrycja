@@ -78,15 +78,10 @@ export default function HomePage() {
           <div className="number">[ 3 ]</div>
           <nav className="gallery">
             <Link to="/project1">
+              {/* Plain <img> on purpose: <source> tags inside <picture> would override the GIF. */}
               <RevealImage
-                src="/images/t-shirt-gif.gif"
+                src="/images/t-shirt-small.gif"
                 alt="HOEK collection preview"
-                sources={[
-                  { srcSet: '/images/t-shirt400.jpg', media: '(max-width: 400px)' },
-                  { srcSet: '/images/t-shirt800.jpg', media: '(max-width: 800px)' },
-                  { srcSet: '/images/t-shirt1200.jpg', media: '(max-width: 1200px)' },
-                  { srcSet: '/images/t-shirt1800.jpg', media: '(max-width: 1800px)' },
-                ]}
               />
             </Link>
           </nav>

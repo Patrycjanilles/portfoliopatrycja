@@ -53,7 +53,7 @@ export default function ProjectHoek() {
         <section>
           <div className="picture1">
             <div className="photo1">
-              <RevealImage src="/images/hoek-after.gif" alt="hoek-after" />
+              <RevealImage src="/images/hoek-after-small.gif" alt="hoek-after" />
             </div>
           </div>
 
