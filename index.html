@@ -1,403 +1,97 @@
 <!DOCTYPE html>
 <!--
 Design and Code by Patrycja Moeller
-2025
---> 
+2025–2026
+-->
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NPR15FH04F"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NPR15FH04F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-NPR15FH04F');
+    </script>
 
-            gtag('config', 'G-NPR15FH04F');
-        </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'vnd26bs950');
+    </script>
 
-        <!-- Microsoft Clarity -->
-        <script type="text/javascript">
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "vnd26bs950");
-        </script>
-        
-        <!-- Primary Meta Tags -->
-        <title>Patrycja Moeller | Creative Designer & Web Developer</title>
-        <meta name="title" content="Patrycja Moeller | Creative Designer & Web Developer">
-        <meta name="description" content="Graphic Design & Web Development portfolio of Patrycja Moeller. Explore creative projects, visual design, and web development work based in Warsaw.">
-        <meta name="keywords" content="graphic design, web development, visual designer, portfolio, Warsaw, Patrycja Moeller">
-        <meta name="author" content="Patrycja Moeller">
-        
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://patrycjamoller.com/">
-        <meta property="og:title" content="Patrycja Moeller | Visual Designer & Web Developer">
-        <meta property="og:description" content="Graphic Design & Web Development portfolio of Patrycja Moeller. Explore creative projects, visual design, and web development work based in Warsaw.">
-        <meta property="og:image" content="https://patrycjamoller.com/images/og-image.jpg">
+    <!-- Primary Meta Tags -->
+    <title>Patrycja Moeller | Creative Designer & Web Developer</title>
+    <meta name="title" content="Patrycja Moeller | Creative Designer & Web Developer" />
+    <meta
+      name="description"
+      content="Graphic Design & Web Development portfolio of Patrycja Moeller. Explore creative projects, visual design, and web development work based in Warsaw."
+    />
+    <meta
+      name="keywords"
+      content="graphic design, web development, visual designer, portfolio, Warsaw, Patrycja Moeller"
+    />
+    <meta name="author" content="Patrycja Moeller" />
 
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://patrycjamoller.com/">
-        <meta property="twitter:title" content="Patrycja Moeller | Visual Designer & Web Developer">
-        <meta property="twitter:description" content="Graphic Design & Web Development portfolio of Patrycja Moeller. Explore creative projects, visual design, and web development work based in Warsaw.">
-        <meta property="twitter:image" content="https://patrycjamoller.com/images/og-image.jpg">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://patrycjamoeller.com/" />
+    <meta property="og:title" content="Patrycja Moeller | Visual Designer & Web Developer" />
+    <meta
+      property="og:description"
+      content="Graphic Design & Web Development portfolio of Patrycja Moeller. Explore creative projects, visual design, and web development work based in Warsaw."
+    />
+    <meta property="og:image" content="https://patrycjamoeller.com/images/og-image.jpg" />
 
-        <!-- Additional Meta Tags -->
-        <meta name="format-detection" content="telephone=no">
-        <meta name="format-detection" content="date=no">
-        <meta name="format-detection" content="address=no">
-        <meta name="format-detection" content="email=no">
-        <meta name="robots" content="index, follow">
-       
-        
-        <!-- Canonical URL -->
-        <link rel="canonical" href="https://patrycjamoller.com/">
-        
-        <!-- Favicon -->
-        <link rel="icon" type="image/svg+xml" href="svg/logo_circle_blue.svg" sizes="32x32">
-        <link rel="apple-touch-icon" href="svg/logo_circle_blue.svg">
-        
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        
-        <!-- Preload CSS -->
-        <link rel="preload" href="css/style_index.css?v=3" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="css/style_index.css?v=3"></noscript>
-        
-        <!-- Preload Critical Images -->
-         <link rel="preload" as="image" href="images/berlin800.jpg">
-         <link rel="preload" as="image" href="images/bill1200.jpg">
-         <link rel="preload" as="image" href="images/t-shirt1200.jpg">
-         <script type="text/javascript">
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "srkumelf9q");
-        </script>
-    </head>
-     
-    <body>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://patrycjamoeller.com/" />
+    <meta property="twitter:title" content="Patrycja Moeller | Visual Designer & Web Developer" />
+    <meta
+      property="twitter:description"
+      content="Graphic Design & Web Development portfolio of Patrycja Moeller. Explore creative projects, visual design, and web development work based in Warsaw."
+    />
+    <meta property="twitter:image" content="https://patrycjamoeller.com/images/og-image.jpg" />
 
-    <!-- LEFT COLUMN CURSOR ANIMATION -->
-    <div id="cursor-stage" aria-hidden="true"></div>
+    <!-- Additional Meta Tags -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="robots" content="index, follow" />
 
-    <!--LOGO--------------------------->
-    <header>
-        <h1>Patrycja Moeller</h1>
-        <h2>Web Developer</h2>
-      
-       
-    </header>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://patrycjamoeller.com/" />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/svg/logo_circle_blue.svg" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/svg/logo_circle_blue.svg" />
 
-    </div>
-    <!--PROJECTS----------------------->
-    <main id="content">
-        <div class="selected-projects">
-            Selected Projects
-        </div>
-        <div class="project-heading">PROJECT</div>
-
-
-<!-- project5 -->
-<div class="project">
-    <div class="number">[ 5 ]</div>
-    <nav class="gallery">
-        <picture data-slide="1" class="lazy">
-           
-            
-            <source srcset="images/fridgebook-cover.jpg" media="(max-width: 1200px)">
-            
-            <a href="https://fridgecook-three.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="images/fridgebook-cover.jpg" alt="FridgeBook app preview"></a>
-        </picture>
-    </nav>
-</div>
-<div class="caption">FridgeBook</div>
-<div class="discription">Recipe app: add what’s in the fridge and see what you can cook. Built with React, TypeScript, React Router, and Supabase.
-   <br> <a class="fridgebook-code-link" href="https://github.com/Patrycjanilles/fridgecook" target="_blank" rel="noopener noreferrer">View kod</a>
-</div>
-
-
-<!-- Speakly -->
-<div class="project">
-    <div class="number">[ 4 ]</div>
-    <div class="gallery">
-        <a href="project4.html">
-            <video src="videos/Speakly_web.mp4" autoplay muted loop playsinline></video>
-        </a>
-    </div>
- </div>
- <div class="caption">Speakly</div>
- <div class="discription">Speakly is a platform that allows you to transcribe your voice to text.
- </div>
-
-
-
-<!-- project4 -->
-        <div class="project">
-            <div class="number">[ 3 ]</div>
-            <nav class="gallery">
-                <picture data-slide="1" class="lazy">
-                    <source srcset="images/t-shirt400.jpg" media="(max-width: 400px)">
-                    <source srcset="images/t-shirt800.jpg" media="(max-width: 800px)">
-                    <source srcset="images/t-shirt1200.jpg" media="(max-width: 1200px)">
-                    <source srcset="images/t-shirt1800.jpg" media="(max-width: 1800px)">
-                    <a href="project1.html"><img src="images/t-shirt-gif.gif" alt="t-shirt_gif"></a>
-                </picture>
-            </nav>
-        </div>
-        <div class="caption">HOEK</div>
-        <div class="discription">HOEK is a multidimensional concept encompassing a printed magazine, visual identity, website, and clothing collection, focusing on urban aesthetics, street culture, and contemporary design.</div>
-   
-
-        
-       
-
-         <!--project[social.media]-->
-         <!-- <div class="project">
-            <div class="number">[ ?? ]</div>
-            <div class="gallery">
-                <picture data-slide="1" class="lazy">
-                    <source srcset="images/berlin400.jpg" media="(max-width: 400px)">
-                    <source srcset="images/berlin800.jpg" media="(max-width: 800px)">
-                    <source srcset="images/berlin1200.jpg" media="(max-width: 1200px)">
-                    <a href="project4.html"><img src="images/handbag.jpg" alt="handbag"></a>
-                </picture>
-            </div>
-        </div>
-        <div class="caption">Social Media</div>
-        <div class="discription">A comprehensive visual identity project for a contemporary art exhibition at the National Galerie in Berlin.</div> -->
-
-
-             <!--project3-->
-             <div class="project">
-                <div class="number">[ 2 ]</div>
-                <div class="gallery">
-                    <picture data-slide="1" class="lazy">
-                        <source srcset="images/berlin400.jpg" media="(max-width: 400px)">
-                        <source srcset="images/berlin800.jpg" media="(max-width: 800px)">
-                        <source srcset="images/berlin1200.jpg" media="(max-width: 1200px)">
-                        <a href="project3.html"><img src="images/berlin800.jpg" alt="berlin"></a>
-                    </picture>
-                </div>
-            </div>
-            <div class="caption">National Galerie</div>
-            <div class="discription">A comprehensive visual identity project for a contemporary art exhibition at the National Galerie in Berlin.</div>
-
-         <!--project2-->
-        <div class="project">
-            
-            <div class="number">[ 1]</div>
-            <div class="gallery">
-                <picture data-slide="1" class="lazy">
-                    <source srcset="images/bill400.jpg" media="(max-width: 400px)">
-                    <source srcset="images/bill800.jpg" media="(max-width: 800px)">
-                    <source srcset="images/bill1200.jpg" media="(max-width: 1200px)">
-                    <source srcset="images/bill1800.jpg" media="(max-width: 1800px)">
-                    <a href="project2.html"><img src="images/bill1200.jpg" alt="bill"></a>
-                </picture>
-            </div>
-        </div>
-        <div class="caption">Some stuff</div>
-        <div class="discription">A selection of personal and experimental projects, a glimpse into my creative process and visual explorations.</div>
-        
-        <!--project1-->
-       
-    </main>
-   
-   
-    <!--INFO---------------------------->
-    <div id="info">
-      
-        <div class="discription-me">Patrycja Moeller is a junior frontend and UI developer with a graphic design background. She builds interfaces from design to code.
-
-        </div>
-        <div class="about">
-            <a href="about.html" class="about_link">More</a>
-        </div>
-         <!--  
-        
-        <div class="services">Services</div>
-        <div class="services-list">
-            Digital Design<br>
-            Visual Identity<br>
-            Web Development<br>
-            Editorial Design<br>
-        </div>
-        -->
-        
-        <!-- contact -->
-         <!-- 
-        <div class="contact">
-            <a href="contact.html" class="contact_link">Contact</a>
-        </div>
-         -->
-
-           <!-- blog -->
-            <!-- 
-           <a href="blog.html" class="blog_here">Blog here</a>
-            -->
-        <div class="links">
-           <a href="mailto:moeller.patrycja@gmail.com">moeller.patrycja@gmail.com</a>
-           <a href="tel:+794068624">+48794068624</a>
-           <a href="https://www.instagram.com/patry.ofc/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </div>
-      
-        <!-- spotify -->
-        <div class="spotify">
-            <a href="#" onclick="toggleSpotifyPlayer(); return false;">
-                <span class="play-icon" id="playIcon">▶</span>Spotify
-            </a>
-            <div class="spotify-player" id="spotifyPlayer" style="display: none;">
-                <iframe src="https://open.spotify.com/embed/playlist/7qZxxRljzpalMW42v84r1I?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-        </div>
-
-
-   
-    <!--FOOTER----------------------->
-    <footer id="footer">
-        <div class="copiright">All rights reserved.<br>
-                © Patrycja Moeller, 2025</div>
-    </footer>
-     </div>
-     
-     <!--FOOTER MOBILE----------------------->
-     <footer id="footer-mobile">
-         <div class="footer-contact-text">Feel free to get in touch</div>
-         <div class="footer-contact-info">
-             <a href="mailto:hello@patrycjamoeller.com">hello@patrycjamoeller.com</a>
-             <a href="tel:+794068624">+48794068624</a>
-             <a href="https://www.instagram.com/patry.ofc/" target="_blank" rel="noopener noreferrer">Instagram</a>
-         </div>
-     </footer>   
-     
-     <script>
-        function toggleSpotifyPlayer() {
-            const player = document.getElementById('spotifyPlayer');
-            const playIcon = document.getElementById('playIcon');
-            
-            if (player.style.display === 'none') {
-                // Pokaż odtwarzacz
-                player.style.display = 'block';
-                playIcon.textContent = '⏸';
-                playIcon.style.color = '#ff6b6b';
-            } else {
-                // Ukryj odtwarzacz
-                player.style.display = 'none';
-                playIcon.textContent = '▶';
-                playIcon.style.color = '#1DB954';
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const stage = document.getElementById('cursor-stage');
-            if (!stage) {
-                return;
-            }
-
-            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            if (prefersReducedMotion) {
-                return;
-            }
-
-            const imageSources = [
-                'images/bill400.jpg',
-                'images/imagesources8.png',
-                'images/cover.jpg',
-                'images/imagesources6.png',
-                'images/grid14.jpg',
-                'images/grid7.jpg',
-                'images/imagesources10.png',
-                'images/grid41.jpg',
-                'images/grid5.jpg',
-                'images/grid35.jpg',
-                'images/imagesources9.png',
-                'images/hoek_grass.jpg',
-                'images/imagesources1.png',
-                'images/imagesources2.png',
-                'images/imagesources3.png',
-                'images/imagesources4.png',
-                'images/imagesources5.jpg',
-                'images/imagesources7.jpg',
-                'images/imagesources11.png'
-              
-                
-               
-            ];
-
-            const size = 40;
-            const frameDistance = 12;
-            let bounds = stage.getBoundingClientRect();
-            let last = null;
-            let distanceBucket = 0;
-            let frameIndex = 0;
-
-            const cursorImage = document.createElement('img');
-            cursorImage.src = imageSources[0];
-            cursorImage.alt = '';
-            cursorImage.className = 'cursor-tetra';
-            cursorImage.width = size;
-            cursorImage.height = size;
-            cursorImage.style.opacity = '0';
-            stage.appendChild(cursorImage);
-
-            const updateBounds = () => {
-                bounds = stage.getBoundingClientRect();
-            };
-
-            const updatePosition = (x, y) => {
-                cursorImage.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
-            };
-
-            const advanceFrame = () => {
-                frameIndex = (frameIndex + 1) % imageSources.length;
-                cursorImage.src = imageSources[frameIndex];
-            };
-
-            stage.addEventListener('mousemove', (event) => {
-                const x = event.clientX - bounds.left;
-                const y = event.clientY - bounds.top;
-
-                if (last) {
-                    const dx = x - last.x;
-                    const dy = y - last.y;
-                    distanceBucket += Math.hypot(dx, dy);
-                    while (distanceBucket >= frameDistance) {
-                        distanceBucket -= frameDistance;
-                        advanceFrame();
-                    }
-                }
-
-                updatePosition(x, y);
-                cursorImage.style.opacity = '1';
-                last = { x, y };
-            });
-
-            stage.addEventListener('mouseenter', () => {
-                cursorImage.style.opacity = '1';
-            });
-
-            stage.addEventListener('mouseleave', () => {
-                last = null;
-                distanceBucket = 0;
-                cursorImage.style.opacity = '0';
-            });
-
-            updateBounds();
-            window.addEventListener('resize', updateBounds);
-        });
-     </script>
-     <script src="js/scrollReveal.js"></script>
-     
-    </body>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
